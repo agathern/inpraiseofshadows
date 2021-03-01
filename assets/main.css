@@ -1,0 +1,81 @@
+body{
+	background: black;
+}
+h1{
+  font-family:'Sawarabi Mincho', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 60px; 
+}
+
+h2{
+  font-family:'Sawarabi Mincho', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+p{
+color: white;
+text-align: center;
+font-family: 'Sawarabi Gothic', sans-serif;}
+
+p:hover{
+	color: #C8C8C8;
+}
+
+.mobile{
+top: 10%;
+height: 800px;
+background: #2E2B28;  
+box-sizing: border-box;
+border: 7px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.window1{
+	display: none;
+top: 0;
+height: 706px;
+background: #2E2B28;  
+box-sizing: border-box;
+border: 12px solid black;
+}
+.wrapper{
+	position: absolute;
+	left: 10%;
+}
+.desktop{
+	display: none;
+}
+@media only screen and (min-width: 501px) {
+.window1 {
+	z-index: -1;
+display: inline-block;
+width: 450px;
+float: left;}
+
+.mobile{
+	display: none;
+}
+
+.desktop{
+	top: 50%;
+	left: 20%;
+	position: absolute;
+	display: inline-block;
+	z-index: 1;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1{
+	font-size: 100px; 
+}
+h2{
+	font-size: 50px;
+}
+p{
+	font-size: 25px;
+}
